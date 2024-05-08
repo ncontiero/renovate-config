@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":disableRateLimiting"],
+  "dependencyDashboard": false,
+  "semanticCommits": "enabled",
+  "semanticCommitType": "chore",
+  "commitMessageTopic": "{{depName}}",
+  "rangeStrategy": "bump",
+  "configMigration": true
+}

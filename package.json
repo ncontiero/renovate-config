@@ -1,0 +1,23 @@
+{
+  "name": "@dkshs/renovate-config",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "DKSHS's renovate config.",
+  "author": "DKSHS",
+  "license": "MIT",
+  "files": [
+    "default.json"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "renovate-config-validator ./default.json ./ts.json"
+  },
+  "dependencies": {
+    "renovate": "^37.351.2"
+  },
+  "devDependencies": {
+    "@dkshs/eslint-config": "^2.4.0",
+    "eslint": "^9.2.0"
+  }
+}
