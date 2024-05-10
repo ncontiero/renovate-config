@@ -11,7 +11,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "renovate-config-validator ./default.json ./ts.json"
+    "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
     "renovate": "^37.351.2"

@@ -14,6 +14,17 @@
     {
       "groupName": "clerk packages",
       "matchPackagePatterns": ["^@clerk/"]
+    },
+    {
+      "groupName": "definitelyTyped",
+      "automerge": true,
+      "matchPackagePatterns": ["^@types/"],
+      "matchUpdateTypes": ["patch", "minor"]
     }
-  ]
+  ],
+  "pip_requirements": {
+    "fileMatch": [
+      "(^|/)*requirements([./|-][a-z]+)?.(txt|pip)$"
+    ]
+  }
 }
