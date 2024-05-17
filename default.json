@@ -12,6 +12,11 @@
       "semanticCommitType": "chore"
     },
     {
+      "enabled": false,
+      "matchDepTypes": ["engines"],
+      "matchPackagePatterns": ["node"]
+    },
+    {
       "groupName": "clerk packages",
       "matchPackagePatterns": ["^@clerk/"]
     },
