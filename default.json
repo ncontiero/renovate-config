@@ -4,6 +4,7 @@
   "dependencyDashboard": false,
   "semanticCommits": "enabled",
   "commitMessageTopic": "{{depName}}",
+  "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "configMigration": true,
   "packageRules": [
