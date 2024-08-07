@@ -14,10 +14,10 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "^37.351.2"
+    "renovate": "^38.21.3"
   },
   "devDependencies": {
-    "@dkshs/eslint-config": "^2.4.0",
-    "eslint": "^9.2.0"
+    "@dkshs/eslint-config": "^2.8.3",
+    "eslint": "^9.8.0"
   }
 }
