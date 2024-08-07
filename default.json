@@ -9,23 +9,23 @@
   "configMigration": true,
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "semanticCommitType": "chore"
+      "semanticCommitType": "chore",
+      "matchPackageNames": ["*"]
     },
     {
       "enabled": false,
       "matchDepTypes": ["engines"],
-      "matchPackagePatterns": ["node"]
+      "matchPackageNames": ["node"]
     },
     {
       "groupName": "clerk packages",
-      "matchPackagePatterns": ["^@clerk/"]
+      "matchPackageNames": ["^@clerk/"]
     },
     {
       "groupName": "definitelyTyped",
       "automerge": true,
-      "matchPackagePatterns": ["^@types/"],
-      "matchUpdateTypes": ["patch", "minor"]
+      "matchUpdateTypes": ["patch", "minor"],
+      "matchPackageNames": ["^@types/"]
     }
   ],
   "pip_requirements": {
