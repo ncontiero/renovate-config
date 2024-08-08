@@ -19,13 +19,13 @@
     },
     {
       "groupName": "clerk packages",
-      "matchPackageNames": ["^@clerk/"]
+      "matchPackageNames": ["@clerk/**"]
     },
     {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchUpdateTypes": ["patch", "minor"],
-      "matchPackageNames": ["^@types/"]
+      "matchPackageNames": ["@types/**"]
     }
   ],
   "pip_requirements": {
