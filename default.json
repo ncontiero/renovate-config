@@ -22,6 +22,10 @@
       "matchPackageNames": ["@clerk/**"]
     },
     {
+      "groupName": "rspress packages",
+      "matchPackageNames": ["rspress", "@rspress/**"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchUpdateTypes": ["patch", "minor"],
