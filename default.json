@@ -26,6 +26,10 @@
       "matchPackageNames": ["rspress", "@rspress/**"]
     },
     {
+      "groupName": "contentlayer2 packages",
+      "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchUpdateTypes": ["patch", "minor"],
