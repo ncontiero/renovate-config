@@ -30,6 +30,10 @@
       "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
     },
     {
+      "groupName": "changesets packages",
+      "matchPackageNames": ["@changesets/**"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchUpdateTypes": ["patch", "minor"],
