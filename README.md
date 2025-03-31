@@ -8,7 +8,7 @@ Add the following to your `renovate.json` file:
 
 ```jsonc
 {
-  "extends": ["github>dkshs/renovate-config"],
+  "extends": ["github>ncontiero/renovate-config"],
 
   // override any settings here
   "automerge": true

@@ -1,9 +1,9 @@
 {
-  "name": "@dkshs/renovate-config",
+  "name": "@ncontiero/renovate-config",
   "type": "module",
   "version": "1.0.0",
-  "description": "DKSHS's renovate config.",
-  "author": "DKSHS",
+  "description": "Nicolas's renovate config.",
+  "author": "Nicolas Contiero <https://github.com/ncontiero>",
   "license": "MIT",
   "files": [
     "default.json"
@@ -14,10 +14,10 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "^39.172.0"
+    "renovate": "^39.227.2"
   },
   "devDependencies": {
-    "@dkshs/eslint-config": "^4.1.0",
-    "eslint": "^9.20.1"
+    "@ncontiero/eslint-config": "^5.1.1",
+    "eslint": "^9.23.0"
   }
 }
