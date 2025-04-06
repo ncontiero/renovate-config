@@ -34,6 +34,10 @@
       "matchPackageNames": ["@changesets/**"]
     },
     {
+      "groupName": "bull-board packages",
+      "matchPackageNames": ["@bull-board/**"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchUpdateTypes": ["patch", "minor"],
