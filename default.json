@@ -26,6 +26,10 @@
       "matchPackageNames": ["rspress", "@rspress/**"]
     },
     {
+      "groupName": "t3-env packages",
+      "matchPackageNames": ["@t3-oss/env-**"]
+    },
+    {
       "groupName": "contentlayer2 packages",
       "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
     },
