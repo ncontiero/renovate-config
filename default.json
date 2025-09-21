@@ -7,8 +7,9 @@
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "configMigration": true,
+  "minimumReleaseAge": "3 days",
   "packageRules": [
-    { "semanticCommitType": "chore", "matchPackageNames": ["*"] },
+    { "matchPackageNames": ["*"], "semanticCommitType": "chore" },
     {
       "enabled": false,
       "matchDepTypes": ["engines"],
@@ -35,7 +36,6 @@
     {
       "groupName": "definitelyTyped",
       "automerge": true,
-      "matchUpdateTypes": ["patch", "minor"],
       "matchPackageNames": ["@types/**"]
     }
   ],
