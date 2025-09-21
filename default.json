@@ -8,27 +8,18 @@
   "rangeStrategy": "bump",
   "configMigration": true,
   "packageRules": [
-    {
-      "semanticCommitType": "chore",
-      "matchPackageNames": ["*"]
-    },
+    { "semanticCommitType": "chore", "matchPackageNames": ["*"] },
     {
       "enabled": false,
       "matchDepTypes": ["engines"],
       "matchPackageNames": ["node"]
     },
-    {
-      "groupName": "clerk packages",
-      "matchPackageNames": ["@clerk/**"]
-    },
+    { "groupName": "clerk packages", "matchPackageNames": ["@clerk/**"] },
     {
       "groupName": "rspress packages",
       "matchPackageNames": ["rspress", "@rspress/**"]
     },
-    {
-      "groupName": "t3-env packages",
-      "matchPackageNames": ["@t3-oss/env-**"]
-    },
+    { "groupName": "t3-env packages", "matchPackageNames": ["@t3-oss/env-**"] },
     {
       "groupName": "contentlayer2 packages",
       "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
@@ -49,8 +40,6 @@
     }
   ],
   "pip_requirements": {
-    "fileMatch": [
-      "(^|/)*requirements([./|-][a-z]+)?.(txt|pip)$"
-    ]
+    "managerFilePatterns": ["/(^|/)*requirements([./|-][a-z]+)?.(txt|pip)$/"]
   }
 }
