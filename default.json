@@ -7,8 +7,9 @@
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "configMigration": true,
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "1 days",
   "packageRules": [
+    { "matchDatasources": ["npm", "pypi"], "minimumReleaseAge": "3 days" },
     { "matchPackageNames": ["*"], "semanticCommitType": "chore" },
     {
       "enabled": false,
