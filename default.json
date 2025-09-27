@@ -9,7 +9,7 @@
   "configMigration": true,
   "minimumReleaseAge": "1 days",
   "packageRules": [
-    { "matchDatasources": ["npm", "pypi"], "minimumReleaseAge": "3 days" },
+    { "matchDatasources": ["npm"], "minimumReleaseAge": "3 days" },
     { "matchPackageNames": ["*"], "semanticCommitType": "chore" },
     {
       "enabled": false,
