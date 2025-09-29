@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       renovate:
-        specifier: ^41.131.8
-        version: 41.131.8(encoding@0.1.13)(typanion@3.14.0)
+        specifier: ^41.132.1
+        version: 41.132.1(encoding@0.1.13)(typanion@3.14.0)
     devDependencies:
       '@ncontiero/eslint-config':
         specifier: ^6.2.0
@@ -1346,8 +1346,8 @@ packages:
     resolution: {integrity: sha512-be0PUaPsQX/gPWWgFsdD+GFzaoig5PXaUC1xLkQiYdDnANU8sMnHoQd8JhbJQuvTWrWLyeFN9Imb5Qtfvr4RrQ==}
     hasBin: true
 
-  better-sqlite3@12.2.0:
-    resolution: {integrity: sha512-eGbYq2CT+tos1fBwLQ/tkBt9J5M3JEHjku4hbvQUePCckkvVf14xWj+1m7dGoK81M/fOjFT7yM9UMeKT/+vFLQ==}
+  better-sqlite3@12.3.0:
+    resolution: {integrity: sha512-FFf+rsghyvXQIPV/6PDUj05EsuZA1b0drGLzNgtrELkXnJKUH6NNM2h7Ce7dkA6vvPOM4SOoUIDGRPy3yRKmqw==}
     engines: {node: 20.x || 22.x || 23.x || 24.x}
 
   bignumber.js@9.3.1:
@@ -3170,8 +3170,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@5.1.5:
-    resolution: {integrity: sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==}
+  nanoid@5.1.6:
+    resolution: {integrity: sha512-c7+7RQ+dMB5dPwwCp4ee1/iV/q2P6aK1mTZcfr1BTuVlyW9hJYiMPybJCcnBlQtuSmTIWNeazm/zqNoZSSElBg==}
     engines: {node: ^18 || >=20}
     hasBin: true
 
@@ -3670,8 +3670,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.131.8:
-    resolution: {integrity: sha512-pFArK+NdaHT+5BDeP8TyYMaDZt4tV8fm9T7AxR7WcE9vfx29bsvJ/Sm81/Dhg8KXrxJ+39wq8ajlJT2WGsha1w==}
+  renovate@41.132.1:
+    resolution: {integrity: sha512-O9flp4tpuMEYoZaS5zP+cW4UvwB8yxoATJMVvdJ00opEC+IMPfHi8u5WjZVxYR5Thmne+kfc3gUl9TLcCLqLow==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6574,7 +6574,7 @@ snapshots:
 
   baseline-browser-mapping@2.8.8: {}
 
-  better-sqlite3@12.2.0:
+  better-sqlite3@12.3.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.3
@@ -8822,7 +8822,7 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  nanoid@5.1.5: {}
+  nanoid@5.1.6: {}
 
   napi-build-utils@2.0.0:
     optional: true
@@ -9389,7 +9389,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.131.8(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.132.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.879.0
       '@aws-sdk/client-ec2': 3.879.0
@@ -9476,7 +9476,7 @@ snapshots:
       minimatch: 10.0.3
       moo: 0.5.2
       ms: 2.1.3
-      nanoid: 5.1.5
+      nanoid: 5.1.6
       neotraverse: 0.6.18
       node-html-parser: 7.0.1
       p-all: 5.0.1
@@ -9510,7 +9510,7 @@ snapshots:
       yaml: 2.8.1
       zod: 3.25.76
     optionalDependencies:
-      better-sqlite3: 12.2.0
+      better-sqlite3: 12.3.0
       openpgp: 6.2.2
       re2: 1.22.1
     transitivePeerDependencies:
