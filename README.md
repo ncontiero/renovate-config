@@ -11,6 +11,6 @@ Add the following to your `renovate.json` file:
   "extends": ["github>ncontiero/renovate-config"],
 
   // override any settings here
-  "automerge": true
+  "automerge": true,
 }
 ```
