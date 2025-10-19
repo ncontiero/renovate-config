@@ -39,6 +39,10 @@
       "matchPackageNames": ["@bull-board/**"]
     },
     {
+      "groupName": "react-email packages",
+      "matchPackageNames": ["react-email", "@react-email/**"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchPackageNames": ["@types/**"]
