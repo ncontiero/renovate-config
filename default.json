@@ -43,6 +43,10 @@
       "matchPackageNames": ["react-email", "@react-email/**"]
     },
     {
+      "groupName": "trigger.dev packages",
+      "matchPackageNames": ["trigger.dev", "@trigger.dev/**"]
+    },
+    {
       "groupName": "definitelyTyped",
       "automerge": true,
       "matchPackageNames": ["@types/**"]
