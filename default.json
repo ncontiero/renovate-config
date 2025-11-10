@@ -8,11 +8,19 @@
   "rangeStrategy": "bump",
   "configMigration": true,
   "minimumReleaseAge": "1 days",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": ["schedule:daily"]
+  },
   "packageRules": [
     {
       "matchPackageNames": ["*"],
       "semanticCommitType": "chore",
       "dependencyDashboardApproval": false
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "automerge": true
     },
     {
       "enabled": false,
