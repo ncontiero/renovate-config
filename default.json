@@ -30,30 +30,30 @@
       "matchDepTypes": ["engines"],
       "matchPackageNames": ["node"]
     },
-    { "groupName": "clerk packages", "matchPackageNames": ["@clerk/**"] },
+    { "groupName": "clerk monorepo", "matchPackageNames": ["@clerk/**"] },
     {
-      "groupName": "rspress packages",
+      "groupName": "rspress monorepo",
       "matchPackageNames": ["rspress", "@rspress/**"]
     },
-    { "groupName": "t3-env packages", "matchPackageNames": ["@t3-oss/env-**"] },
+    { "groupName": "t3-env monorepo", "matchPackageNames": ["@t3-oss/env-**"] },
     {
-      "groupName": "contentlayer2 packages",
+      "groupName": "contentlayer2 monorepo",
       "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
     },
     {
-      "groupName": "changesets packages",
+      "groupName": "changesets monorepo",
       "matchPackageNames": ["@changesets/**"]
     },
     {
-      "groupName": "bull-board packages",
+      "groupName": "bull-board monorepo",
       "matchPackageNames": ["@bull-board/**"]
     },
     {
-      "groupName": "react-email packages",
+      "groupName": "react-email monorepo",
       "matchPackageNames": ["react-email", "@react-email/**"]
     },
     {
-      "groupName": "trigger.dev packages",
+      "groupName": "trigger.dev monorepo",
       "matchPackageNames": ["trigger.dev", "@trigger.dev/**"]
     },
     {
