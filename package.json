@@ -14,7 +14,7 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "^41.171.7"
+    "renovate": "^42.2.0"
   },
   "devDependencies": {
     "@ncontiero/eslint-config": "^6.4.1",
