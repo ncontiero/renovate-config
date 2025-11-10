@@ -12,6 +12,9 @@
     "enabled": true,
     "extends": ["schedule:daily"]
   },
+  "pre-commit": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchPackageNames": ["*"],
