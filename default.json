@@ -10,7 +10,7 @@
   "minimumReleaseAge": "1 days",
   "lockFileMaintenance": {
     "enabled": true,
-    "extends": ["schedule:daily"]
+    "extends": ["schedule:earlyMondays"]
   },
   "pre-commit": {
     "enabled": true
