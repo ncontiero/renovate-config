@@ -9,10 +9,6 @@
   "configMigration": true,
   "minimumReleaseAge": "1 days",
   "minimumReleaseAgeBehaviour": "timestamp-optional",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": ["schedule:earlyMondays"]
-  },
   "pre-commit": {
     "enabled": true
   },
@@ -21,10 +17,6 @@
       "matchPackageNames": ["*"],
       "semanticCommitType": "chore",
       "dependencyDashboardApproval": false
-    },
-    {
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "automerge": true
     },
     {
       "enabled": false,
