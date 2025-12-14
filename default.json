@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":disableRateLimiting", "security:minimumReleaseAgeNpm"],
+  "extends": ["config:recommended", ":disableRateLimiting"],
   "dependencyDashboard": true,
   "semanticCommits": "enabled",
   "commitMessageTopic": "{{depName}}",
@@ -13,6 +13,7 @@
     "enabled": true
   },
   "packageRules": [
+    { "matchDatasources": ["npm"], "minimumReleaseAge": "2 days" },
     {
       "matchPackageNames": ["*"],
       "semanticCommitType": "chore",
