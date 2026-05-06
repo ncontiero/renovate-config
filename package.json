@@ -14,10 +14,10 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "^42.19.3"
+    "renovate": "^43.150.0"
   },
   "devDependencies": {
-    "@ncontiero/eslint-config": "^6.5.0",
-    "eslint": "^9.39.1"
+    "@ncontiero/eslint-config": "^8.0.0",
+    "eslint": "^10.3.0"
   }
 }
