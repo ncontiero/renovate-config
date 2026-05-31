@@ -5,3 +5,5 @@ allowBuilds:
   protobufjs: false
   re2: false
   unrs-resolver: false
+
+minimumReleaseAge: 4320
