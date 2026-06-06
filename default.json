@@ -4,12 +4,15 @@
   "extends": [
     "config:recommended",
     "docker:pinDigests",
-    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver",
     ":configMigration",
     "abandonments:recommended",
-    "helpers:pinGitHubActionDigestsToSemver",
+    ":maintainLockFilesWeekly",
     ":disableRateLimiting",
-    ":maintainLockFilesWeekly"
+    ":disablePeerDependencies",
+    "group:allNonMajor",
+    "group:allDigest",
+    "schedule:earlyMondays"
   ],
   "rangeStrategy": "bump",
   "minimumReleaseAge": "3 days",
@@ -21,48 +24,47 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["*"],
-      "semanticCommitType": "chore",
-      "dependencyDashboardApproval": false
-    },
-    {
       "enabled": false,
       "matchDepTypes": ["engines"],
       "matchPackageNames": ["node"]
     },
-    { "groupName": "clerk monorepo", "matchPackageNames": ["@clerk/**"] },
+    {
+      "groupName": "clerk monorepo",
+      "matchSourceUrls": ["https://github.com/clerk/javascript"],
+      "matchUpdateTypes": ["major"]
+    },
     {
       "groupName": "rspress monorepo",
-      "matchPackageNames": ["rspress", "@rspress/**"]
+      "matchSourceUrls": ["https://github.com/web-infra-dev/rspress"],
+      "matchUpdateTypes": ["major"]
     },
-    { "groupName": "t3-env monorepo", "matchPackageNames": ["@t3-oss/env-**"] },
+    {
+      "groupName": "t3-env monorepo",
+      "matchSourceUrls": ["https://github.com/t3-oss/t3-env"],
+      "matchUpdateTypes": ["major"]
+    },
     {
       "groupName": "contentlayer2 monorepo",
-      "matchPackageNames": ["contentlayer2", "next-contentlayer2"]
+      "matchSourceUrls": ["https://github.com/timlrx/contentlayer2"],
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "changesets monorepo",
-      "matchPackageNames": ["@changesets/**"]
-    },
-    {
-      "groupName": "bull-board monorepo",
-      "matchPackageNames": ["@bull-board/**"]
-    },
-    {
-      "groupName": "react-email monorepo",
-      "matchPackageNames": ["react-email", "@react-email/**"]
+      "matchSourceUrls": ["https://github.com/changesets/changesets/"],
+      "matchUpdateTypes": ["major"]
     },
     {
       "groupName": "trigger.dev monorepo",
-      "matchPackageNames": ["trigger.dev", "@trigger.dev/**"]
+      "matchSourceUrls": ["https://github.com/triggerdotdev/trigger.dev"],
+      "matchUpdateTypes": ["major"]
     },
     {
-      "groupName": "definitelyTyped",
-      "automerge": true,
-      "matchPackageNames": ["@types/**"]
+      "extends": ["group:definitelyTyped"],
+      "matchUpdateTypes": ["major"],
+      "automerge": true
     }
   ],
   "pip_requirements": {
-    "managerFilePatterns": ["/(^|/)*requirements([./|-][a-z]+)?.(txt|pip)$/"]
+    "managerFilePatterns": ["/(^|/)[\\w-]*requirements([./_-][\\w-]+)?\\.(txt|pip)$/"]
   }
 }
