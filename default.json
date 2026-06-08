@@ -10,8 +10,7 @@
     ":maintainLockFilesWeekly",
     ":disableRateLimiting",
     ":disablePeerDependencies",
-    "group:allNonMajor",
-    "group:allDigest"
+    "group:githubArtifactActions"
   ],
   "schedule": [
     "* 3-5 * * 0"
@@ -68,8 +67,20 @@
       "matchUpdateTypes": ["major"]
     },
     {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "groupName": "all digest updates",
+      "groupSlug": "all-digest",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["digest"]
+    },
+    {
       "extends": ["group:definitelyTyped"],
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true
     }
   ],
