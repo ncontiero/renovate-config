@@ -21,6 +21,13 @@
   "semanticCommits": "enabled",
   "commitMessageTopic": "{{depName}}",
   "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "* 0-3 * * 1"
+    ],
+    "automerge": true
+  },
   "pre-commit": {
     "enabled": true
   },
