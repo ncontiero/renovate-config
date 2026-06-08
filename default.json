@@ -11,8 +11,10 @@
     ":disableRateLimiting",
     ":disablePeerDependencies",
     "group:allNonMajor",
-    "group:allDigest",
-    "schedule:earlyMondays"
+    "group:allDigest"
+  ],
+  "schedule": [
+    "* 3-5 * * 0"
   ],
   "rangeStrategy": "bump",
   "minimumReleaseAge": "3 days",
