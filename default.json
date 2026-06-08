@@ -79,7 +79,8 @@
       "matchUpdateTypes": ["digest"]
     },
     {
-      "extends": ["group:definitelyTyped"],
+      "groupName": "definitelyTyped",
+      "matchPackageNames": ["@types/**"],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "automerge": true
     }
