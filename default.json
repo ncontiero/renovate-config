@@ -13,7 +13,7 @@
     "group:githubArtifactActions"
   ],
   "schedule": [
-    "* 3-5 * * 0"
+    "* 3-6 * * 0"
   ],
   "rangeStrategy": "bump",
   "minimumReleaseAge": "3 days",
