@@ -37,6 +37,10 @@
       "matchPackageNames": ["node"]
     },
     {
+      "matchPackageNames": ["*"],
+      "semanticCommitType": "chore"
+    },
+    {
       "groupName": "clerk monorepo",
       "matchSourceUrls": ["https://github.com/clerk/javascript"],
       "matchUpdateTypes": ["major"]
