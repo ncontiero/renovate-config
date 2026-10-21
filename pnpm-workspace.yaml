@@ -1,3 +1,5 @@
+minimumReleaseAge: 4320
+
 allowBuilds:
   better-sqlite3: false
   core-js-pure: false
@@ -5,5 +7,3 @@ allowBuilds:
   protobufjs: false
   re2: false
   unrs-resolver: false
-
-minimumReleaseAge: 4320
