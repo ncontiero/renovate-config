@@ -2,7 +2,7 @@
   "name": "@ncontiero/renovate-config",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@12.18.0",
+  "packageManager": "pnpm@12.21.0",
   "description": "Nicolas's renovate config.",
   "author": "Nicolas Contiero <https://github.com/ncontiero>",
   "license": "MIT",
@@ -15,10 +15,10 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "44.234.1"
+    "renovate": "44.239.1"
   },
   "devDependencies": {
     "@ncontiero/eslint-config": "8.6.2",
-    "eslint": "10.14.0"
+    "eslint": "10.15.0"
   }
 }
