@@ -77,7 +77,8 @@
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchNewValue": "!/-(alpha|beta|rc|canary|next|dev|pre|preview|nightly|snapshot)/i"
     },
     {
       "groupName": "all digest updates",
